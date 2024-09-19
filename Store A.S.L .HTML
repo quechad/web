@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">Logo</a>
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img src="images/menu.png" class="menu-icono" alt="Menú">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Contactos</a></li>
+                </ul>
+            </nav>
+
+            <div class="search-container">
+                <form action="/search" method="get" class="search-form">
+                    <input type="text" name="query" placeholder="Buscar productos..." aria-label="Buscar productos">
+                    <button type="submit">Buscar</button>
+                </form>
+            </div>
+
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img src="images/car.svg" id="img-carrito" alt="Carrito">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th>Acciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="Vaciar_Carrito" class="btn-2">Vaciar Carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="header-content container">
+            <div class="header-img">
+                <img src="images/right.png" alt="Ofertas especiales">
+            </div>
+            <div class="header-txt">
+                <h1>Ofertas Especiales</h1>
+                <p>Conoce más sobre nuestra tienda y sus colaboraciones con diferentes tiendas y marcas.</p>
+                <p>Estrena las mejores prendas</p>
+                <a href="#" class="btn-1">Información</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="ofert container">
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="images/f1.png" alt="Producto 1">
+            </div>
+            <div class="ofert-txt">
+                <h3>Producto 1</h3>
+                <a href="#" class="btn-2">Información</a>
+            </div>
+        </div>
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="images/f2.png" alt="Producto 2">
+            </div>
+            <div class="ofert-txt">
+                <h3>Producto 2</h3>
+                <a href="#" class="btn-2">Información</a>
+            </div>
+        </div>
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="images/f3.png" alt="Producto 3">
+            </div>
+            <div class="ofert-txt">
+                <h3>Producto 3</h3>
+                <a href="#" class="btn-2">Información</a>
+            </div>
+        </div>
+    </section>
+
+    <main class="products container" id="lista-1">
+        <h2>Productos</h2>
+        <div class="product-content">
+            <div class="product">
+                <img src="images/1.png" alt="Camisa Playera Hombre">
+                <div class="product-txt">
+                    <h3>Camisa Playera Hombre</h3>
+                    <p>Calidad premium</p>
+                    <p class="precio">s/.120</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/2.png" alt="Casaca Impermeable Hombre">
+                <div class="product-txt">
+                    <h3>Casaca Impermeable Hombre</h3>
+                    <p>Calidad premium</p>
+                    <p class="precio">s/.250</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/3.png" alt="Casaca Negra Mujer">
+                <div class="product-txt">
+                    <h3>Casaca Negra Mujer</h3>
+                    <p>Calidad premium</p>
+                    <p class="precio">s/.175</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/4.png" alt="Camisa Azul Hombre">
+                <div class="product-txt">
+                    <h3>Camisa Azul Hombre</h3>
+                    <p>Calidad premium</p>
+                    <p class="precio">s/.140</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/5.png" alt="Camisa Negra Hombre">
+                <div class="product-txt">
+                    <h3>Camisa Negra Hombre</h3>
+                    <p>Calidad premium</p>
+                    <p class="precio">s/.150</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="5">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/6.png" alt="Saco Azul Mujer">
+                <div class="product-txt">
+                    <h3>Saco Azul Mujer</h3>
+                    <p>Calidad premium</p>
+                    <p class="precio">s/.200</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="6">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="icons container">
+        <div class="icon-1">
+            <div class="icon-img">
+                <img src="images/i1.svg" alt="Icono 1">
+            </div>
+            <div class="icon-txt">
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                <p>Amet consectetur adipisicing elit</p>
+            </div>
+        </div>
+        <div class="icon-1">
+            <div class="icon-img">
+                <img src="images/i2.svg" alt="Icono 2">
+            </div>
+            <div class="icon-txt">
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                <p>Amet consectetur adipisicing elit</p>
+            </div>
+        </div>
+        <div class="icon-1">
+            <div class="icon-img">
+                <img src="images/i3.svg" alt="Icono 3">
+            </div>
+            <div class="icon-txt">
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                <p>Amet consectetur adipisicing elit</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog container">
+        <div class="blog-1">
+            <img src="images/b1.jpg" alt="Blog 1">
+            <h3>Blog 1</h3>
+            <p>Aquí encontrarás accesorios para ropa, como:
+                <ul>
+                    <li>Correas</li>
+                    <li>Carpetas</li>
+                    <li>Bolso</li>
+                </ul>
+            </p>
+        </div>
+        <div class="blog-2">
+            <img src="images/b2.jpg" alt="Blog 2">
+            <h3>Blog 2</h3>
+            <p>Aquí encontrarás accesorios para ropa de vestir, como:
+                <ul>
+                    <li>Correas</li>
+                    <li>Carpetas</li>
+                    <li>Bolso</li>
+                </ul>
+            </p>
+        </div>
+        <div class="blog-3">
+            <img src="images/b3.jpg" alt="Blog 3">
+            <h3>Blog 3</h3>
+            <p>Aquí encontrarás accesorios para joggers y buzos, como:
+                <ul>
+                    <li>Mochilas</li>
+                    <li>Gorras</li>
+                    <li>Sudaderas</li>
+                </ul>
+            </p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="link">
+                <h3>PERÚ-CUSCO</h3>
+                <ul>
+                    <li><a href="tel:965744293">CONTACTOS: 965744293</a></li>
+                    <li><a href="#">DIRECCIÓN: San Francisco-1567</a></li>
+                    <li><a href="#">Delivery gratis</a></li>
+                    <li><a href="#">Envíos a todo el Perú</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>Tienda Topitop</h3>
+                <ul>
+                    <li><a href="https://www.topitop.pe/hombre/casacas-hombre?PS=12&O=OrderByScoreDESC">CASACAS</a></li>
+                    <li><a href="https://www.topitop.pe/hombre/camisas-hombre?PS=12&O=OrderByScoreDESC">CAMISAS</a></li>
+                    <li><a href="https://www.topitop.pe/hombre/jeans-hombre?PS=12&O=OrderByScoreDESC">JEANS</a></li>
+                    <li><a href="https://www.topitop.pe/hombre/joggers-y-buzos-para-hombre?PS=12&O=OrderByScoreDESC">OTROS</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scrip.js"></script>
+</body>
+</html>
+
